@@ -1,2 +1,5 @@
-# AI_Prog_student
-Repository voor het vak AI programming
+# AI_programming
+Oefeningen en demos voor het vak AI Programming
+
+## Hoe conda omgeving installeren ?
+`conda create -f environment.yml`

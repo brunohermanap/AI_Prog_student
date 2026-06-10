@@ -1,0 +1,17 @@
+{
+  "name": "AI Programming Devcontainer",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "forwardPorts": [
+    8888
+  ]
+}
