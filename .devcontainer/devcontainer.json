@@ -7,12 +7,14 @@
     "UV_PROJECT_ENVIRONMENT": "/opt/venv"
   },
   "updateContentCommand": "uv sync",
+  "postCreateCommand": "apt-get update && apt-get install -y git",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter",
-        "charliermarsh.ruff"
+        "charliermarsh.ruff",
+        "GitHub.vscode-pull-request-github"
       ]
     }
   }
