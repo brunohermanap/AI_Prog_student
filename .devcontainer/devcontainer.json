@@ -1,17 +1,19 @@
 {
-  "name": "AI Programming Devcontainer",
-  "build": {
-    "dockerfile": "../Dockerfile"
+  "name": "AI Programming",
+  "image": "ghcr.io/astral-sh/uv:python3.13-trixie",
+  "remoteEnv": {
+    "VIRTUAL_ENV": "/opt/venv",
+    "PATH": "/opt/venv/bin:${containerEnv:PATH}",
+    "UV_PROJECT_ENVIRONMENT": "/opt/venv"
   },
+  "updateContentCommand": "uv sync",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-toolsai.jupyter"
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff"
       ]
     }
-  },
-  "forwardPorts": [
-    8888
-  ]
+  }
 }
